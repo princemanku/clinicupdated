@@ -1,0 +1,124 @@
+@charset "utf-8";
+/* CSS Document */
+
+.hover,
+.hover .overlay {
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+}
+.hover,
+.hover h2 {
+    text-align: center
+}
+
+.hover a.info,
+.hover h2 {
+    text-transform: uppercase;
+    color: #fff
+}
+
+.hover {
+    float: left;
+    position: relative;
+    cursor: default
+}
+.hover .overlay {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+.hover img {
+    display: block;
+    /* position: relative; */
+    position: absolute;
+    max-width: inherit;
+    height: 100%;
+}
+.hover a.info {
+    display: inline-block
+}
+.hover h2 {
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgb(175, 150, 80);
+}
+.hover a.info {
+    text-decoration: none;
+    padding: 7px 14px;
+    border: 1px solid #fff;
+    margin: 50px 0 0;
+    border-radius: 0;
+    background-color: transparent
+}
+.hover a.info:hover {
+    box-shadow: 0 0 5px #fff
+}
+.hover a.nullbutton:hover {
+    box-shadow: none
+}
+.hover a.nullbutton {
+    border: none;
+    padding: 0;
+    margin: 0
+}
+
+.ehover42 {border: 5px solid #af9650; height: 225px;
+    overflow: hidden;}
+
+.ehover42:before {bottom: 0;right: 0;border-bottom: 1px solid #5d5955;border-right: 1px solid #5d5955;content: '';z-index: 2;width: 0;height: 0;visibility: hidden;
+position: absolute;
+-webkit-transition: all 800ms ease-in-out;-moz-transition: all 800ms ease-in-out;
+-ms-transition: all 800ms ease-in-out;
+-o-transition: all 800ms ease-in-out;
+transition: all 800ms ease-in-out;}
+
+.ehover42 a.info {
+    margin: -55px 0 0;
+    padding: 73px 90px;
+    font-weight: 400;
+    border: 1px solid #fff
+}
+
+.ehover42 .overlay,
+.ehover42 h2 {
+    -webkit-transition: all .4s cubic-bezier(.88, -.99, 0, 1.81)
+}
+.ehover4:hover a.info {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1)
+}
+.ehover42 h2 {
+    -webkit-transform: translateY(55px);
+    transform: translateY(55px);
+    transition: all .4s cubic-bezier(.88, -.99, 0, 1.81)
+}
+.ehover42:hover h2 {
+    -webkit-transform: translateY(15px);
+    transform: translateY(15px)
+}
+.ehover42 .overlay {
+    background-color: rgba(255, 255, 255, 0.04);
+    transition: all .4s cubic-bezier(.88, -.99, 0, 1.81)
+}
+.ehover1v2 img,
+.ehover42 a.info {
+    -webkit-transition: all .4s cubic-bezier(.88, -.99, 0, 1.81)
+}
+.ehover42:hover .overlay {
+    background-color:rgba(0, 0, 0, 0.44);
+}
+.ehover42 a.info {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    transition: all .4s cubic-bezier(.88, -.99, 0, 1.81)
+}
+.ehover42:hover a.info {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1)
+}
+

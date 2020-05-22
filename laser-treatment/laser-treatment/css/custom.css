@@ -1,0 +1,128 @@
+.landing-contact {
+    padding: 20px 20px 22px 20px;
+    /*border: solid 1px #444;*/
+    background-color: #fff;
+    opacity: .9;
+}
+
+.landing-contact input,
+.landing-contact select {
+    border-radius: 5px !important;
+    /*width: 330px !important;*/
+}
+
+@media (min-width: 1025px) {
+    /*Adding width to navbar*/
+    .navbar-container .container {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .navbar-container .container .navbar-header {
+        padding: 0px 0px 0px 40px;
+    }
+
+    .navbar-container .container .navbar-collapse {
+        padding: 0px 40px 0px 0px;
+    }
+}
+
+/*Modal Form Start*/
+form.modal-form .form-input {
+    margin-bottom: 1em;
+}
+
+form.modal-form .form-group label {
+    padding: 6px;
+}
+
+form.modal-form .form-group .radio {
+    padding: 6px;
+}
+
+form.modal-form .form-group .radio label {
+    padding: 0px;
+}
+
+form.modal-form .form-group .form-add-on {
+    width: 60px;
+}
+
+form.modal-form select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+form.modal-form .form-group textarea.form-control {
+    min-height: 80px;
+    /*max-height: 100px;*/
+}
+
+/*Modal Form End*/
+
+/*Remove all these after book appointment updated*/
+form#appointment-form .form-input {
+    margin-bottom: 1em;
+}
+
+form#appointment-form label {
+    padding: 6px;
+}
+
+form#appointment-form .form-group .form-add-on {
+    width: 60px;
+}
+
+form#appointment-form select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+form#appointment-form .form-group textarea.form-control {
+    min-height: 80px;
+    max-height: 100px;
+}
+
+.laser {
+    background: url(../images/vibes-inner-banner-laser.jpg) no-repeat scroll center top #98d8e6;
+}
+
+.bikini_hair_removal {
+    background: url(../images/vibes-laser-banner-bikini-hair-removal.jpg) no-repeat scroll center top #98d8e6;
+}
+
+.body_hair_removal {
+    background: url(../images/vibes-laser-banner-body-hair-removal.jpg) no-repeat scroll center top #98d8e6;
+}
+
+.facial_hair_removal {
+    background: url(../images/vibes-laser-banner-facial-hair-removal.jpg) no-repeat scroll center top #98d8e6;
+}
+
+/*.hair_removal {*/
+/*background: url(../images/vibes-inner-banner-laser.jpg) no-repeat scroll center top #98d8e6;*/
+/*}*/
+
+.laser_hair_removal {
+    background: url(../images/vibes-laser-banner-laser-hair-removal.jpg) no-repeat scroll center top #98d8e6;
+}
+
+.laser_hair_removal_clinic {
+    background: url(../images/vibes-laser-banner-laser-hair-removal-clinic.jpg) no-repeat scroll center top #98d8e6;
+}
+
+.laser_hair_removal_chin {
+    background: url(../images/vibes-laser-banner-laser-hair-removal-chin.jpg) no-repeat scroll center top #98d8e6;
+}
+
+.laser_hair_removal_leg {
+    background: url(../images/vibes-laser-banner-laser-hair-removal-legs.jpg) no-repeat scroll center top #98d8e6;
+}
+
+.thankyou {
+    background: url(../images/thanku-banner.jpg) no-repeat scroll center top #f3f3f3;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+

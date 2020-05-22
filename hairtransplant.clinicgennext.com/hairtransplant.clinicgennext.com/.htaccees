@@ -1,0 +1,15 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ http://www.hairtransplant.clinicgennext.com/$1 [L,R=301]
+
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://www.hairtransplant.clinicgennext.com/$1 [L,R=301] 
+
+
+
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ http://www.hairtransplant.clinicgennext.com/$1 [L,R=301]
+
+RewriteCond %{SERVER_PORT} !^443$
+RewriteRule ^(.*)$ https://www.hairtransplant.clinicgennext.com/$1 [L,R=301]

@@ -1,0 +1,384 @@
+ 
+#timeline a {
+	color: #000;
+	text-decoration: none;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.time-slot{width:71%;}
+
+.time-slot h3 {
+    color: #ef4531;
+}
+
+
+.leftpd{padding-left:0px !important;}
+#timeline{color: #000;}
+	#timeline a:hover,
+	#timeline a.selected {
+		color: #ffffff;
+    /* font-weight: bold; */
+    padding: 4px;
+    border-bottom: dotted 2px #f49784;
+    
+	}
+	
+	
+	#timeline #dates a:hover, #timeline #dates a.selected {
+    color: #f00;
+    /* font-weight: bold; */
+    padding: 4px;
+    border-bottom: dotted 2px #f49784;
+}
+ 
+.bg{background: #fff;}
+
+	#timeline {
+/*
+		width: 800px;
+		height: auto;
+*/
+		overflow: hidden;
+		margin: 20px auto;
+		position: relative;
+		background: url('../images/dot.gif') left 55px repeat-x;
+        padding: 0px 0px;
+	}
+
+
+.auto {
+    display: block;
+    float: none !important;
+}
+
+
+		#dates {
+			width: 800px;
+			height: 60px;
+			overflow: hidden;
+            min-width: 1600px;
+		}
+			#dates li {
+				list-style: none;
+                float: left;
+                width: 175px;
+                height: 60px;
+                font-size: 16px;
+                text-align: center;
+                background: url(../images/biggerdot.png) center bottom no-repeat;
+			}
+				#dates a {
+					    line-height: 80px;
+                         
+                    text-decoration: none;
+				}
+				#dates .selected {
+			        font-size: 16px;
+				}
+		
+		#issues {
+			width: 800px;
+			height: 500px;
+			overflow: hidden;
+            padding-left: 0px;
+		}	
+			#issues li {
+				    width: 800px;
+                    height: 350px;
+                    list-style: none;
+                    float: left;
+                   
+			}
+
+#issues li .hr {
+    
+    border-bottom: solid 1px #d9d9d9;
+    margin-bottom: 10px;
+    padding: 15px 0px;
+}
+				#issues li.selected img {
+					-webkit-transform: scale(1.1,1.1);
+					-moz-transform: scale(1.1,1.1);
+				    -o-transform: scale(1.1,1.1);
+				    -ms-transform: scale(1.1,1.1);
+				    transform: scale(1.1,1.1);
+				}
+				#issues li img {
+					float: left;
+					margin-right: 10px;
+                    width: 20px;
+					background: transparent;
+					-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE 8 */   
+					filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);/* IE 6 & 7 */      
+					zoom: 1;
+					-webkit-transition: all 2s ease-in-out;
+					-moz-transition: all 2s ease-in-out;
+					-o-transition: all 2s ease-in-out;
+					-ms-transition: all 2s ease-in-out; 
+					transition: all 2s ease-in-out;
+					-webkit-transform: scale(0.7,0.7);
+					-moz-transform: scale(0.7,0.7);
+				    -o-transform: scale(0.7,0.7);
+				    -ms-transform: scale(0.7,0.7);
+				    transform: scale(0.7,0.7);
+				}
+				#issues li h1 {
+					color: #ffcc00;
+					font-size: 48px;
+					margin: 20px 0;
+					text-shadow: #000 1px 1px 2px;
+				}
+				#issues li .timeholder {
+					font-size: 14px;
+					margin-right: 0px;
+					font-weight: normal;
+					line-height: 22px;
+                    color: #000;
+				}
+
+
+#issues li a {
+    font-size: 10px;
+    padding: 5px 8px;
+    border: 1px solid #4f9600;
+    margin: 0 8px 8px 0;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #232323;
+    line-height: 18px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+#issues li a:hover {
+        background: #4f9600;
+    color: #fff;
+    text-decoration: none;
+    font-size: 10px;
+    padding: 5px 8px;
+    border: 1px solid #4f9600;
+    margin: 0 8px 8px 0;
+    display: inline-block;
+    text-transform: uppercase;
+    line-height: 18px;
+    font-size: 14px;
+    
+}
+
+		
+		#grad_left,
+		#grad_right {
+			width: 42px;
+			height: 55px;
+			position: absolute;
+			top: 0;
+			    background: #e9e9e9;
+		}
+			#grad_left {
+		        left: 0;
+		        
+			}
+			#grad_right {
+		        right: 0;
+		         
+			}
+		
+		#next,
+		#prev {
+			   position: absolute;
+                font-size: 20px;
+                color: #000;
+                top: 10px;
+                padding-top: 5px;
+                text-align: center;
+                width: 22px;
+                height: 38px;
+                background-position: 0 0;
+                background-repeat: no-repeat;
+                /* text-indent: -9999px; */
+                overflow: hidden;
+		}
+			#next:hover,
+			#prev:hover {
+				background-position: 0 -76px;
+			}
+			#next {
+				right: 0;
+    width: 42px;
+    height: 42px;
+    background: #f6b0a2;
+    border: solid 1px #dedede;
+    border-radius: 100%;
+			}
+			
+				#next:hover{
+					border-bottom: 0px !important;
+				
+				}			
+			
+			#prev:hover{
+					border-bottom: 0px !important;
+				
+				}			
+			
+			
+			#prev {
+				left: 0;
+				 
+               width: 42px;
+    height: 42px;
+    background: #f6b0a2;
+    border: solid 1px #dedede;
+    border-radius: 100%;
+			}
+				#next.disabled,
+				#prev.disabled {
+					opacity: 0.2;
+				}
+
+#time_slot_response {
+    border: solid 1px #f3907b;
+    padding: 12px;
+}
+
+#time_slot_response ul li{    list-style-type: none;
+    color: #f00;
+}
+.appoint_disabled {
+    cursor: not-allowed;
+    background: #d9d9d9 !important;
+    border: 1px solid #d9d9d9 !important;
+    color: #a0a0a0 !important;
+}
+
+
+/*--------------------------------Responsive Section-----------------------------*/
+
+/* Hybrid Screen (For All Devices) ----------- */
+
+@media (max-width:767px){
+
+.time-slot{width:95%; position: relative;}
+.leftpd {
+     
+    margin-bottom: 20px;
+}
+.time-slot .col-md-10{
+    padding-left: 0px;
+}
+
+#issues {
+	
+     
+    height: 100%;
+     
+}
+
+#issues li {
+     
+    height: 100%;
+     
+}
+
+#dates li {
+    
+    width: 175px;
+        background:none;
+       
+}  
+
+#grad_left, #grad_right {
+    width: 62px;
+    
+}
+
+#timeline #dates a:hover, #timeline #dates a.selected {
+     
+    font-weight: bold !important;
+    padding: 4px 4px 4px 89px;
+    border-bottom: dotted 0px #000000;
+    
+}
+   
+#issues li a {
+            display: block;
+    width: 250px;
+    margin-left: 2%;
+    text-align: center;
+}
+
+#issues li a:hover {
+           display: block;
+    width: 250px;
+    margin-left: 2%;
+    text-align: center;
+}
+
+ 
+}
+
+
+
+@media (min-width: 376px) and (max-width: 414px)
+   {
+      #issues li a {
+            display: block;
+    width: 300px;
+    margin-left: 2%;
+    text-align: center;
+}
+
+#dates li {
+    width: 200px;
+    
+}
+
+#issues li a:hover {
+           display: block;
+    width: 300px;
+    margin-left: 2%;
+    text-align: center;
+}
+   }
+
+
+ 
+
+/* iPads (landscape) */
+@media (max-width:768px)
+{
+.leftpd {
+    margin-bottom: 20px;
+}
+}
+
+ 
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+.time-slot {
+    width: 95%;
+}
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
